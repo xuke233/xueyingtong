@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>学硬通</title>
+    <link rel="icon" href="png/title.ico" >
+    <!-- import CSS -->
+    <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+    <!-- import JavaScript -->
+    <script src="element-ui/lib/index.js"></script>
+    <!-- import Vue before Element -->
+    <script src="vue/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+    <el-container>
+        <el-header>Header</el-header>
+        <el-container>
+            <el-aside width="200px">Aside</el-aside>
+            <el-main>Main</el-main>
+        </el-container>
+    </el-container>
+</div>
+
+</body>
+
+<style>
+    body > .el-container {
+        margin-bottom: 40px;
+    }
+
+    .el-container:nth-child(5) .el-aside,
+    .el-container:nth-child(6) .el-aside {
+        line-height: 260px;
+    }
+
+    .el-container:nth-child(7) .el-aside {
+        line-height: 320px;
+    }
+</style>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>
