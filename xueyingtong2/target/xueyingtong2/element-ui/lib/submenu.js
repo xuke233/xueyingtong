@@ -293,7 +293,7 @@ var poperMixins = {
       return this.rootMenu.collapse ? 'el-zoom-in-left' : 'el-zoom-in-top';
     },
     opened: function opened() {
-      return this.rootMenu.openedMenus.indexOf(this.index) > -1;
+      return this.rootMenu.openedMenus.indexOf(this.indexHtml) > -1;
     },
     active: function active() {
       var isActive = false;
@@ -366,16 +366,16 @@ var poperMixins = {
       }
     },
     addItem: function addItem(item) {
-      this.$set(this.items, item.index, item);
+      this.$set(this.items, item.indexHtml, item);
     },
     removeItem: function removeItem(item) {
-      delete this.items[item.index];
+      delete this.items[item.indexHtml];
     },
     addSubmenu: function addSubmenu(item) {
-      this.$set(this.submenus, item.index, item);
+      this.$set(this.submenus, item.indexHtml, item);
     },
     removeSubmenu: function removeSubmenu(item) {
-      delete this.submenus[item.index];
+      delete this.submenus[item.indexHtml];
     },
     handleClick: function handleClick() {
       var rootMenu = this.rootMenu,
@@ -404,7 +404,7 @@ var poperMixins = {
       this.dispatch('ElSubmenu', 'mouse-enter-child');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function () {
-        _this2.rootMenu.openMenu(_this2.index, _this2.indexPath);
+        _this2.rootMenu.openMenu(_this2.indexHtml, _this2.indexPath);
       }, showTimeout);
     },
     handleMouseleave: function handleMouseleave() {
@@ -418,7 +418,7 @@ var poperMixins = {
       this.dispatch('ElSubmenu', 'mouse-leave-child');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function () {
-        !_this3.mouseInChild && _this3.rootMenu.closeMenu(_this3.index);
+        !_this3.mouseInChild && _this3.rootMenu.closeMenu(_this3.indexHtml);
       }, this.hideTimeout);
     },
     handleTitleMouseenter: function handleTitleMouseenter() {
@@ -635,11 +635,11 @@ module.exports = require("element-ui/lib/mixins/emitter");
   inject: ['rootMenu'],
   computed: {
     indexPath: function indexPath() {
-      var path = [this.index];
+      var path = [this.indexHtml];
       var parent = this.$parent;
       while (parent.$options.componentName !== 'ElMenu') {
-        if (parent.index) {
-          path.unshift(parent.index);
+        if (parent.indexHtml) {
+          path.unshift(parent.indexHtml);
         }
         parent = parent.$parent;
       }

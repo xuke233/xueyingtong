@@ -768,7 +768,7 @@ var node_Node = function () {
     }
 
     newNodes.forEach(function (_ref) {
-      var index = _ref.index,
+      var index = _ref.indexHtml,
           data = _ref.data;
 
       _this4.insertChild({ data: data }, index);

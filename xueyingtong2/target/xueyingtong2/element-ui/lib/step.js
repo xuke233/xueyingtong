@@ -249,7 +249,7 @@ var render = function() {
                       : _vm._e(),
                     !_vm.icon && !_vm.isSimple
                       ? _c("div", { staticClass: "el-step__icon-inner" }, [
-                          _vm._v(_vm._s(_vm.index + 1))
+                          _vm._v(_vm._s(_vm.indexHtml + 1))
                         ])
                       : _vm._e()
                   ])
@@ -388,7 +388,7 @@ render._withStripped = true
       return this.status || this.internalStatus;
     },
     prevStatus: function prevStatus() {
-      var prevStep = this.$parent.steps[this.index - 1];
+      var prevStep = this.$parent.steps[this.indexHtml - 1];
       return prevStep ? prevStep.currentStatus : 'wait';
     },
     isCenter: function isCenter() {
@@ -434,11 +434,11 @@ render._withStripped = true
 
   methods: {
     updateStatus: function updateStatus(val) {
-      var prevChild = this.$parent.$children[this.index - 1];
+      var prevChild = this.$parent.$children[this.indexHtml - 1];
 
-      if (val > this.index) {
+      if (val > this.indexHtml) {
         this.internalStatus = this.$parent.finishStatus;
-      } else if (val === this.index && this.prevStatus !== 'error') {
+      } else if (val === this.indexHtml && this.prevStatus !== 'error') {
         this.internalStatus = this.$parent.processStatus;
       } else {
         this.internalStatus = 'wait';
@@ -450,12 +450,12 @@ render._withStripped = true
       var step = 100;
       var style = {};
 
-      style.transitionDelay = 150 * this.index + 'ms';
+      style.transitionDelay = 150 * this.indexHtml + 'ms';
       if (status === this.$parent.processStatus) {
         step = this.currentStatus !== 'error' ? 0 : 0;
       } else if (status === 'wait') {
         step = 0;
-        style.transitionDelay = -150 * this.index + 'ms';
+        style.transitionDelay = -150 * this.indexHtml + 'ms';
       }
 
       style.borderWidth = step && !this.isSimple ? '1px' : 0;
@@ -468,7 +468,7 @@ render._withStripped = true
   mounted: function mounted() {
     var _this = this;
 
-    var unwatch = this.$watch('index', function (val) {
+    var unwatch = this.$watch('indexHtml.css', function (val) {
       _this.$watch('$parent.active', _this.updateStatus, { immediate: true });
       _this.$watch('$parent.processStatus', function () {
         var activeIndex = _this.$parent.active;

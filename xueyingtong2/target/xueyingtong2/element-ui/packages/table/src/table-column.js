@@ -55,7 +55,7 @@ const forced = {
     },
     renderCell: function(h, { $index, column }) {
       let i = $index + 1;
-      const index = column.index;
+      const index = column.indexHtml;
 
       if (typeof index === 'number') {
         i = $index + index;

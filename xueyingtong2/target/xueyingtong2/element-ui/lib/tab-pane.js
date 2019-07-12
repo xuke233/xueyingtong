@@ -273,14 +273,14 @@ render._withStripped = true
       return this.closable || this.$parent.closable;
     },
     active: function active() {
-      var active = this.$parent.currentName === (this.name || this.index);
+      var active = this.$parent.currentName === (this.name || this.indexHtml);
       if (active) {
         this.loaded = true;
       }
       return active;
     },
     paneName: function paneName() {
-      return this.name || this.index;
+      return this.name || this.indexHtml;
     }
   },
 

@@ -2,11 +2,11 @@ export default {
   inject: ['rootMenu'],
   computed: {
     indexPath() {
-      const path = [this.index];
+      const path = [this.indexHtml];
       let parent = this.$parent;
       while (parent.$options.componentName !== 'ElMenu') {
-        if (parent.index) {
-          path.unshift(parent.index);
+        if (parent.indexHtml) {
+          path.unshift(parent.indexHtml);
         }
         parent = parent.$parent;
       }

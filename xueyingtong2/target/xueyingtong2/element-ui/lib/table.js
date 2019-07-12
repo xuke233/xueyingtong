@@ -892,7 +892,7 @@ var util_orderBy = function orderBy(array, sortKey, reverse, sortMethod, sortBy)
     var order = compare(a, b);
     if (!order) {
       // make stable https://en.wikipedia.org/wiki/Sorting_algorithm#Stability
-      order = a.index - b.index;
+      order = a.indexHtml - b.indexHtml;
     }
     return order * reverse;
   }).map(function (item) {
@@ -1177,7 +1177,7 @@ table_store_TableStore.prototype.mutations = {
           var rowId = getRowIdentity(row, rowKey);
           var rowInfo = selectedMap[rowId];
           if (rowInfo) {
-            selection[rowInfo.index] = row;
+            selection[rowInfo.indexHtml] = row;
           }
         });
 

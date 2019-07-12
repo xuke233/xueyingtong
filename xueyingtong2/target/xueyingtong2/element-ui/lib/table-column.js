@@ -194,7 +194,7 @@ var forced = {
           column = _ref4.column;
 
       var i = $index + 1;
-      var index = column.index;
+      var index = column.indexHtml;
 
       if (typeof index === 'number') {
         i = $index + index;

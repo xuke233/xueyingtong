@@ -636,7 +636,7 @@ var dom_ = __webpack_require__(2);
     updateActiveIndex: function updateActiveIndex(val) {
       var item = this.items[val] || this.items[this.activeIndex] || this.items[this.defaultActive];
       if (item) {
-        this.activeIndex = item.index;
+        this.activeIndex = item.indexHtml;
         this.initOpenedMenu();
       } else {
         this.activeIndex = null;
@@ -692,16 +692,16 @@ var dom_ = __webpack_require__(2);
       return 'rgb(' + Math.round(red) + ', ' + Math.round(green) + ', ' + Math.round(blue) + ')';
     },
     addItem: function addItem(item) {
-      this.$set(this.items, item.index, item);
+      this.$set(this.items, item.indexHtml, item);
     },
     removeItem: function removeItem(item) {
-      delete this.items[item.index];
+      delete this.items[item.indexHtml];
     },
     addSubmenu: function addSubmenu(item) {
-      this.$set(this.submenus, item.index, item);
+      this.$set(this.submenus, item.indexHtml, item);
     },
     removeSubmenu: function removeSubmenu(item) {
-      delete this.submenus[item.index];
+      delete this.submenus[item.indexHtml];
     },
     openMenu: function openMenu(index, indexPath) {
       var openedMenus = this.openedMenus;
@@ -722,7 +722,7 @@ var dom_ = __webpack_require__(2);
       }
     },
     handleSubmenuClick: function handleSubmenuClick(submenu) {
-      var index = submenu.index,
+      var index = submenu.indexHtml,
           indexPath = submenu.indexPath;
 
       var isOpened = this.openedMenus.indexOf(index) !== -1;
@@ -738,14 +738,14 @@ var dom_ = __webpack_require__(2);
     handleItemClick: function handleItemClick(item) {
       var _this = this;
 
-      var index = item.index,
+      var index = item.indexHtml,
           indexPath = item.indexPath;
 
       var oldActiveIndex = this.activeIndex;
-      var hasIndex = item.index !== null;
+      var hasIndex = item.indexHtml !== null;
 
       if (hasIndex) {
-        this.activeIndex = item.index;
+        this.activeIndex = item.indexHtml;
       }
 
       this.$emit('select', index, indexPath, item);
@@ -781,7 +781,7 @@ var dom_ = __webpack_require__(2);
       });
     },
     routeToItem: function routeToItem(item, onError) {
-      var route = item.route || item.index;
+      var route = item.route || item.indexHtml;
       try {
         this.$router.push(route, function () {}, onError);
       } catch (e) {

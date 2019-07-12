@@ -38,9 +38,9 @@ export function preTransformRecycleList (
   if (res.iterator2) {
     // (item, key, index) for object iteration
     // is this even supported?
-    addRawAttr(el, 'index', res.iterator2)
+    addRawAttr(el, 'indexHtml.css', res.iterator2)
   } else if (res.iterator1) {
-    addRawAttr(el, 'index', res.iterator1)
+    addRawAttr(el, 'indexHtml.css', res.iterator1)
   }
 
   const switchKey = getAndRemoveAttr(el, 'switch')

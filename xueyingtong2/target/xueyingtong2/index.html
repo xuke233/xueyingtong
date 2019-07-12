@@ -6,40 +6,88 @@
     <link rel="icon" href="png/title.ico" >
     <!-- import CSS -->
     <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
-    <!-- import JavaScript -->
-    <script src="element-ui/lib/index.js"></script>
     <!-- import Vue before Element -->
     <script src="vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="element-ui/lib/index.js"></script>
 
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/indexHtml.css">
 </head>
 <body>
 <div id="app">
     <el-container>
-        <el-header>Header</el-header>
+
+        <el-header>学硬通</el-header>
+
         <el-container>
-            <el-aside width="200px">Aside</el-aside>
-            <el-main>Main</el-main>
+            <el-aside>
+
+                <el-menu default-active="1" class="el-menu-vertical-demo">
+                    <el-submenu index="1">
+                        <template slot="title">
+                            <i class="el-icon-menu"></i>
+                            <span slot="title">导航一</span>
+                        </template>
+                        <el-menu-item-group>
+                            <span slot="title">分组一</span>
+                            <el-menu-item index="1-1">选项1</el-menu-item>
+                            <el-menu-item index="1-2">选项2</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group>
+                            <span slot="title">分组二</span>
+                            <el-menu-item index="1-3">选项3</el-menu-item>
+                        </el-menu-item-group>
+                        <el-submenu index="1-4">
+                            <span slot="title">选项4</span>
+                            <el-menu-item index="1-4-1">选项1</el-menu-item>
+                        </el-submenu>
+                    </el-submenu>
+                    <el-menu-item index="3" disabled>
+                        <i class="el-icon-document"></i>
+                        <span slot="title">导航三</span>
+                    </el-menu-item>
+
+                </el-menu>
+            </el-aside>
+
+            <el-main>
+                <el-container>
+                    <div class="borderBox windowBox">windowBox</div>
+                </el-container>
+
+                <form action="" method="">
+                    <el-row :gutter="24" class="el-row-height">
+                        <el-col :span="2" :offset="21"><el-button>Button</el-button></el-col>
+                        <el-row :gutter="24" class="el-row-height">
+                            <el-col :span="20">
+                                <el-input type="" autosize placeholder="只能上传jpg/png文件，且不超过500kb"></el-input>
+                            </el-col>
+                            <el-col :span="4">
+                                <el-upload
+                                        class="upload-demo"
+                                        action=""
+                                        multiple
+                                        :limit="1"
+                                        :file-list="fileList">
+                                    <el-button size="small" type="primary">点击上传</el-button>
+                                </el-upload>
+                            </el-col>
+                        </el-row>
+                    </el-row>
+
+                </form>
+            </el-main>
+
         </el-container>
+
+        <el-footer>Footer</el-footer>
+
     </el-container>
 </div>
 
 </body>
-
-<style>
-    body > .el-container {
-        margin-bottom: 40px;
-    }
-
-    .el-container:nth-child(5) .el-aside,
-    .el-container:nth-child(6) .el-aside {
-        line-height: 260px;
-    }
-
-    .el-container:nth-child(7) .el-aside {
-        line-height: 320px;
-    }
-</style>
 <script>
     new Vue({
         el: '#app',

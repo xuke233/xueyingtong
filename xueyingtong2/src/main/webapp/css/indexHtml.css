@@ -1,25 +1,95 @@
-.el-menu-vertical-demo {
-    height: 100%;
-}
-.div1 {
-    height: 400px;
-    margin: 8px;
-}
-.windowBox{
-    height: 400px;
-    width: 100%;
-}
-.el-row {
-    margin-bottom: 4px;
-    margin-top: 4px;
-}
-.el-row-height {
-    height: 4px;
+/*index.html 的样式文件*/
+body{
+    margin: 0;
 }
 
-.el-col {
-    margin-bottom: 2px;
-    margin-top: 2px;
+.el-header {
+    margin-top: 0;
+    line-height: 60px;
 }
-.el-button {
+/*header部分*/
+.el-header-row {
+    height: inherit;
+    color: #E6FCFF;
+}
+.el-header-row-col{
+    height: inherit;
+}
+.el-row-col-div{
+    height: inherit;
+    width: inherit;
+}
+.el-row-col-img {
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+}
+.el-col-font{
+    font-size: 25px;
+    padding-left: 12px;
+}
+.el-col-log-img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: #F5F5f5;
+}
+.el-col-span-inline{
+    text-align: right;
+    padding-right: 6px;
+}
+/*aside部分*/
+.el-container-container{
+    min-height: 400px;
+
+}
+.el-aside {
+    height: inherit;
+    opacity: 0.9;
+}
+.el-menu-vertical-demo{
+    width: 100%;
+    border-width: 0;
+    opacity: 0.8;
+    min-height: inherit;
+}
+/*main部分*/
+.el-main {
+    background-color: #F5F5f5;
+    height: inherit;
+}
+.el-col-windowBox-Button {
+    margin-top: 8px;
+}
+.borderBox{
+    border-style: solid;
+    display: block;
+    border-width: 2px;
+    border-color: #8c939d;
+    border-radius: 4px;
+}
+.windowBox{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+/*footer部分*/
+.el-footer {
+    color: #E6FCFF;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
+body{
+    background-image: url("../png/footerBackground.jpg");
 }

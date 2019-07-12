@@ -1004,7 +1004,7 @@
      * @ignore
      * @argument {Array} arr
      * @argument keyToFind
-     * @returns index or null
+     * @returns indexHtml.css or null
      */
     function getArrayKeyIndex(arr, keyToFind) {
         var i = 0, key;

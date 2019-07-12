@@ -330,7 +330,7 @@ var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
   },
   computed: {
     active: function active() {
-      return this.index === this.rootMenu.activeIndex;
+      return this.indexHtml === this.rootMenu.activeIndex;
     },
     hoverBackground: function hoverBackground() {
       return this.rootMenu.hoverBackground;
@@ -447,11 +447,11 @@ module.exports = require("element-ui/lib/mixins/emitter");
   inject: ['rootMenu'],
   computed: {
     indexPath: function indexPath() {
-      var path = [this.index];
+      var path = [this.indexHtml];
       var parent = this.$parent;
       while (parent.$options.componentName !== 'ElMenu') {
-        if (parent.index) {
-          path.unshift(parent.index);
+        if (parent.indexHtml) {
+          path.unshift(parent.indexHtml);
         }
         parent = parent.$parent;
       }

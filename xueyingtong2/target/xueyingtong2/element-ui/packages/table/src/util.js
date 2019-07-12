@@ -68,7 +68,7 @@ export const orderBy = function(array, sortKey, reverse, sortMethod, sortBy) {
     let order = compare(a, b);
     if (!order) {
       // make stable https://en.wikipedia.org/wiki/Sorting_algorithm#Stability
-      order = a.index - b.index;
+      order = a.indexHtml - b.indexHtml;
     }
     return order * reverse;
   }).map(item => item.value);

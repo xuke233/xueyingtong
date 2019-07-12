@@ -224,7 +224,7 @@ TableStore.prototype.mutations = {
           const rowId = getRowIdentity(row, rowKey);
           const rowInfo = selectedMap[rowId];
           if (rowInfo) {
-            selection[rowInfo.index] = row;
+            selection[rowInfo.indexHtml] = row;
           }
         });
 

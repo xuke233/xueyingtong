@@ -3157,7 +3157,7 @@ var dom_ = __webpack_require__(0);
     updateActiveIndex: function updateActiveIndex(val) {
       var item = this.items[val] || this.items[this.activeIndex] || this.items[this.defaultActive];
       if (item) {
-        this.activeIndex = item.index;
+        this.activeIndex = item.indexHtml;
         this.initOpenedMenu();
       } else {
         this.activeIndex = null;
@@ -3213,16 +3213,16 @@ var dom_ = __webpack_require__(0);
       return 'rgb(' + Math.round(red) + ', ' + Math.round(green) + ', ' + Math.round(blue) + ')';
     },
     addItem: function addItem(item) {
-      this.$set(this.items, item.index, item);
+      this.$set(this.items, item.indexHtml, item);
     },
     removeItem: function removeItem(item) {
-      delete this.items[item.index];
+      delete this.items[item.indexHtml];
     },
     addSubmenu: function addSubmenu(item) {
-      this.$set(this.submenus, item.index, item);
+      this.$set(this.submenus, item.indexHtml, item);
     },
     removeSubmenu: function removeSubmenu(item) {
-      delete this.submenus[item.index];
+      delete this.submenus[item.indexHtml];
     },
     openMenu: function openMenu(index, indexPath) {
       var openedMenus = this.openedMenus;
@@ -3243,7 +3243,7 @@ var dom_ = __webpack_require__(0);
       }
     },
     handleSubmenuClick: function handleSubmenuClick(submenu) {
-      var index = submenu.index,
+      var index = submenu.indexHtml,
           indexPath = submenu.indexPath;
 
       var isOpened = this.openedMenus.indexOf(index) !== -1;
@@ -3259,14 +3259,14 @@ var dom_ = __webpack_require__(0);
     handleItemClick: function handleItemClick(item) {
       var _this = this;
 
-      var index = item.index,
+      var index = item.indexHtml,
           indexPath = item.indexPath;
 
       var oldActiveIndex = this.activeIndex;
-      var hasIndex = item.index !== null;
+      var hasIndex = item.indexHtml !== null;
 
       if (hasIndex) {
-        this.activeIndex = item.index;
+        this.activeIndex = item.indexHtml;
       }
 
       this.$emit('select', index, indexPath, item);
@@ -3302,7 +3302,7 @@ var dom_ = __webpack_require__(0);
       });
     },
     routeToItem: function routeToItem(item, onError) {
-      var route = item.route || item.index;
+      var route = item.route || item.indexHtml;
       try {
         this.$router.push(route, function () {}, onError);
       } catch (e) {
@@ -3375,11 +3375,11 @@ var collapse_transition_default = /*#__PURE__*/__webpack_require__.n(collapse_tr
   inject: ['rootMenu'],
   computed: {
     indexPath: function indexPath() {
-      var path = [this.index];
+      var path = [this.indexHtml];
       var parent = this.$parent;
       while (parent.$options.componentName !== 'ElMenu') {
-        if (parent.index) {
-          path.unshift(parent.index);
+        if (parent.indexHtml) {
+          path.unshift(parent.indexHtml);
         }
         parent = parent.$parent;
       }
@@ -3495,7 +3495,7 @@ var poperMixins = {
       return this.rootMenu.collapse ? 'el-zoom-in-left' : 'el-zoom-in-top';
     },
     opened: function opened() {
-      return this.rootMenu.openedMenus.indexOf(this.index) > -1;
+      return this.rootMenu.openedMenus.indexOf(this.indexHtml) > -1;
     },
     active: function active() {
       var isActive = false;
@@ -3568,16 +3568,16 @@ var poperMixins = {
       }
     },
     addItem: function addItem(item) {
-      this.$set(this.items, item.index, item);
+      this.$set(this.items, item.indexHtml, item);
     },
     removeItem: function removeItem(item) {
-      delete this.items[item.index];
+      delete this.items[item.indexHtml];
     },
     addSubmenu: function addSubmenu(item) {
-      this.$set(this.submenus, item.index, item);
+      this.$set(this.submenus, item.indexHtml, item);
     },
     removeSubmenu: function removeSubmenu(item) {
-      delete this.submenus[item.index];
+      delete this.submenus[item.indexHtml];
     },
     handleClick: function handleClick() {
       var rootMenu = this.rootMenu,
@@ -3606,7 +3606,7 @@ var poperMixins = {
       this.dispatch('ElSubmenu', 'mouse-enter-child');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function () {
-        _this2.rootMenu.openMenu(_this2.index, _this2.indexPath);
+        _this2.rootMenu.openMenu(_this2.indexHtml, _this2.indexPath);
       }, showTimeout);
     },
     handleMouseleave: function handleMouseleave() {
@@ -3620,7 +3620,7 @@ var poperMixins = {
       this.dispatch('ElSubmenu', 'mouse-leave-child');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function () {
-        !_this3.mouseInChild && _this3.rootMenu.closeMenu(_this3.index);
+        !_this3.mouseInChild && _this3.rootMenu.closeMenu(_this3.indexHtml);
       }, this.hideTimeout);
     },
     handleTitleMouseenter: function handleTitleMouseenter() {
@@ -3937,7 +3937,7 @@ var tooltip_default = /*#__PURE__*/__webpack_require__.n(tooltip_);
   },
   computed: {
     active: function active() {
-      return this.index === this.rootMenu.activeIndex;
+      return this.indexHtml === this.rootMenu.activeIndex;
     },
     hoverBackground: function hoverBackground() {
       return this.rootMenu.hoverBackground;
@@ -9805,7 +9805,7 @@ var util_orderBy = function orderBy(array, sortKey, reverse, sortMethod, sortBy)
     var order = compare(a, b);
     if (!order) {
       // make stable https://en.wikipedia.org/wiki/Sorting_algorithm#Stability
-      order = a.index - b.index;
+      order = a.indexHtml - b.indexHtml;
     }
     return order * reverse;
   }).map(function (item) {
@@ -10090,7 +10090,7 @@ table_store_TableStore.prototype.mutations = {
           var rowId = getRowIdentity(row, rowKey);
           var rowInfo = selectedMap[rowId];
           if (rowInfo) {
-            selection[rowInfo.index] = row;
+            selection[rowInfo.indexHtml] = row;
           }
         });
 
@@ -13414,7 +13414,7 @@ var forced = {
           column = _ref4.column;
 
       var i = $index + 1;
-      var index = column.index;
+      var index = column.indexHtml;
 
       if (typeof index === 'number') {
         i = $index + index;
@@ -24014,14 +24014,14 @@ tab_panevue_type_template_id_9145a070_render._withStripped = true
       return this.closable || this.$parent.closable;
     },
     active: function active() {
-      var active = this.$parent.currentName === (this.name || this.index);
+      var active = this.$parent.currentName === (this.name || this.indexHtml);
       if (active) {
         this.loaded = true;
       }
       return active;
     },
     paneName: function paneName() {
-      return this.name || this.index;
+      return this.name || this.indexHtml;
     }
   },
 
@@ -24684,7 +24684,7 @@ var node_Node = function () {
     }
 
     newNodes.forEach(function (_ref) {
-      var index = _ref.index,
+      var index = _ref.indexHtml,
           data = _ref.data;
 
       _this4.insertChild({ data: data }, index);
@@ -30771,7 +30771,7 @@ var stepvue_type_template_id_f414a87a_render = function() {
                       : _vm._e(),
                     !_vm.icon && !_vm.isSimple
                       ? _c("div", { staticClass: "el-step__icon-inner" }, [
-                          _vm._v(_vm._s(_vm.index + 1))
+                          _vm._v(_vm._s(_vm.indexHtml + 1))
                         ])
                       : _vm._e()
                   ])
@@ -30910,7 +30910,7 @@ stepvue_type_template_id_f414a87a_render._withStripped = true
       return this.status || this.internalStatus;
     },
     prevStatus: function prevStatus() {
-      var prevStep = this.$parent.steps[this.index - 1];
+      var prevStep = this.$parent.steps[this.indexHtml - 1];
       return prevStep ? prevStep.currentStatus : 'wait';
     },
     isCenter: function isCenter() {
@@ -30956,11 +30956,11 @@ stepvue_type_template_id_f414a87a_render._withStripped = true
 
   methods: {
     updateStatus: function updateStatus(val) {
-      var prevChild = this.$parent.$children[this.index - 1];
+      var prevChild = this.$parent.$children[this.indexHtml - 1];
 
-      if (val > this.index) {
+      if (val > this.indexHtml) {
         this.internalStatus = this.$parent.finishStatus;
-      } else if (val === this.index && this.prevStatus !== 'error') {
+      } else if (val === this.indexHtml && this.prevStatus !== 'error') {
         this.internalStatus = this.$parent.processStatus;
       } else {
         this.internalStatus = 'wait';
@@ -30972,12 +30972,12 @@ stepvue_type_template_id_f414a87a_render._withStripped = true
       var step = 100;
       var style = {};
 
-      style.transitionDelay = 150 * this.index + 'ms';
+      style.transitionDelay = 150 * this.indexHtml + 'ms';
       if (status === this.$parent.processStatus) {
         step = this.currentStatus !== 'error' ? 0 : 0;
       } else if (status === 'wait') {
         step = 0;
-        style.transitionDelay = -150 * this.index + 'ms';
+        style.transitionDelay = -150 * this.indexHtml + 'ms';
       }
 
       style.borderWidth = step && !this.isSimple ? '1px' : 0;
@@ -30990,7 +30990,7 @@ stepvue_type_template_id_f414a87a_render._withStripped = true
   mounted: function mounted() {
     var _this = this;
 
-    var unwatch = this.$watch('index', function (val) {
+    var unwatch = this.$watch('indexHtml.css', function (val) {
       _this.$watch('$parent.active', _this.updateStatus, { immediate: true });
       _this.$watch('$parent.processStatus', function () {
         var activeIndex = _this.$parent.active;
