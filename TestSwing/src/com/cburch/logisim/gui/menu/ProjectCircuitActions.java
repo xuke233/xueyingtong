@@ -234,14 +234,14 @@ public class ProjectCircuitActions {
 			//analyzer.setSelectedTab(Analyzer.EXPRESSION_TAB);
 			//return;
 		} catch (AnalyzeException ex) {
-			JOptionPane.showMessageDialog(proj.getFrame(), ex.getMessage(),
-					Strings.get("analyzeNoExpressionTitle"),
-					JOptionPane.INFORMATION_MESSAGE);
+			//JOptionPane.showMessageDialog(proj.getFrame(), ex.getMessage(),
+			//		Strings.get("analyzeNoExpressionTitle"),
+			//		JOptionPane.INFORMATION_MESSAGE);
 		}
 		
 		// As a backup measure, we compute a truth table.
 		Analyze.computeTable(analyzer.getModel(), proj, circuit, pinNames);
-		//analyzer.setSelectedTab(Analyzer.TABLE_TAB);//TABLE_TAB = 2;
+		//analyzer.setSelectedTab(Analyzer.TABLE_TAB);
 	}
 		
 	private static void analyzeError(Project proj, String message) {

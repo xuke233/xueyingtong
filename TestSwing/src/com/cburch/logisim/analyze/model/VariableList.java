@@ -92,7 +92,7 @@ public class VariableList {
 		}
 		data.clear();
 		data.addAll(values);
-		//fireEvent(VariableListEvent.ALL_REPLACED);
+		fireEvent(VariableListEvent.ALL_REPLACED);
 	}
 	
 	public void add(String name) {

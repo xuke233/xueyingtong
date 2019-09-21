@@ -176,7 +176,6 @@ public class ProjectActions {
 			doOpen(parent, baseProject, selected);
 		}
 	}
-
 	//可以传 null,null,file
 	public static Project doOpen(Component parent,
 			Project baseProject, File f) {
@@ -253,13 +252,11 @@ public class ProjectActions {
 		return proj;
 
 	}
-
 	//对 doOpen 函数的修改
-	public static Project doOpenT(Component parent,
-								  Project baseProject, File f) {
+	public static Project doOpenT(Project baseProject, File f) {
 
 		Project proj;
-		Loader loader = new Loader(baseProject == null ? parent : baseProject.getFrame());
+		Loader loader = new Loader();
 
 
 		try {
@@ -280,9 +277,7 @@ public class ProjectActions {
 		proj.getLogisimFile().getLoader().setParent(frame);
 		 */
 		return proj;
-
 	}
-
 	// returns true if save is completed
 	public static boolean doSaveAs(Project proj) {
 		Loader loader = proj.getLogisimFile().getLoader();

@@ -10,8 +10,10 @@ import com.cburch.logisim.data.AttributeSets;
 import com.cburch.logisim.data.Attributes;
 
 public class Options {
+	//private static final Object Ignore = new String("ignore");
+	//Ignore = ;
 	public static final AttributeOption GATE_UNDEFINED_IGNORE
-	= new AttributeOption("ignore", Strings.getter("gateUndefinedIgnore"));
+	= new AttributeOption("ignore",Strings.getter("gateUndefinedIgnore"));
 	public static final AttributeOption GATE_UNDEFINED_ERROR
 		= new AttributeOption("error", Strings.getter("gateUndefinedError"));
 		

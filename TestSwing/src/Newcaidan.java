@@ -78,7 +78,6 @@ public class Newcaidan {
 			JFileChooser chooser = new JFileChooser();
 			if (chooser.showOpenDialog(item1)==JFileChooser.APPROVE_OPTION) {//
 				File file = chooser.getSelectedFile();
-				System.out.println("file = " + file);
 				//textArea.setText(file.getName()+":"+file.getPath()+"\n"+file.length());
 				getTrueTable(file);
 				//readFile(file);
@@ -145,18 +144,20 @@ public class Newcaidan {
 		textArea.getText();
 	}
 	private static void getTrueTable(File file){
-		Project proj;
-		proj = ProjectActions.doOpenT(null,null, file);
+		Project proj = null;
+		proj = ProjectActions.doOpenT(null, file);
 		Circuit cur = proj == null ? null : proj.getCurrentCircuit();
 		ProjectCircuitActions.doAnalyzeT(proj, cur);
 
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Newcaidan();
-		File file = new File("C:\\Users\\kxg\\Desktop\\logisimfile\\123.circ");
-		//String str  = "C:\\Users\\kxg\\Desktop\\logisimfile\\123.circ";
-		getTrueTable(file);
+        // new Newcaidan();
+        File file = new File("C:\\Users\\kxg\\Desktop\\logisimfile\\2-4(11).circ");
+        //String str  = "C:\\Users\\kxg\\Desktop\\logisimfile\\123.circ";
+        getTrueTable(file);
+        System.exit(0);
 
 	}
+
 }

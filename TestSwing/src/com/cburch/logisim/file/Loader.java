@@ -66,13 +66,11 @@ public class Loader implements LibraryLoader {
 	private Stack<File> filesOpening = new Stack<>();
 	private Map<File,File> substitutions = new HashMap<>();
 
-	//添加
-	public Loader(){
-		clear();
-	}
-
 	public Loader(Component parent) {
 		this.parent = parent;
+		clear();
+	}
+	public Loader() {
 		clear();
 	}
 

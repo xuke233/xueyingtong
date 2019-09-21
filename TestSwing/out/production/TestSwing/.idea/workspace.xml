@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69570d96-78b7-48cb-91af-c0e17a42de27" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R2qWKIg6NUQfeRawXlrEMChuK3" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567486163413" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kxg\IdeaProjects\TestSwing\src" />
+      <recent name="C:\Users\kxg\IdeaProjects\TestSwing\" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSwing" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Newcaidan" />
+      <module name="TestSwing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69570d96-78b7-48cb-91af-c0e17a42de27" name="Default Changelist" comment="" />
+      <created>1558919843024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558919843024</updated>
+      <workItem from="1558919844695" duration="246000" />
+      <workItem from="1558928713052" duration="272000" />
+      <workItem from="1558963901309" duration="191000" />
+      <workItem from="1558964433900" duration="1037000" />
+      <workItem from="1558965744779" duration="38000" />
+      <workItem from="1558965964935" duration="3957000" />
+      <workItem from="1559046188645" duration="11844000" />
+      <workItem from="1559113501269" duration="8985000" />
+      <workItem from="1559227044775" duration="416000" />
+      <workItem from="1559272375563" duration="210000" />
+      <workItem from="1559273253062" duration="2869000" />
+      <workItem from="1559353448664" duration="3654000" />
+      <workItem from="1559369867218" duration="2339000" />
+      <workItem from="1559477187316" duration="4782000" />
+      <workItem from="1559550538366" duration="8343000" />
+      <workItem from="1559608996262" duration="391000" />
+      <workItem from="1559813838513" duration="377000" />
+      <workItem from="1559814265313" duration="293000" />
+      <workItem from="1559819750975" duration="7007000" />
+      <workItem from="1560168999798" duration="1718000" />
+      <workItem from="1561001007752" duration="427000" />
+      <workItem from="1562147376142" duration="2615000" />
+      <workItem from="1563177954814" duration="3675000" />
+      <workItem from="1563413344264" duration="8656000" />
+      <workItem from="1564102754646" duration="9745000" />
+      <workItem from="1564537695239" duration="1733000" />
+      <workItem from="1564621904460" duration="599000" />
+      <workItem from="1565149892777" duration="2777000" />
+      <workItem from="1567483289572" duration="1899000" />
+      <workItem from="1568469838472" duration="744000" />
+      <workItem from="1568875573887" duration="1836000" />
+      <workItem from="1569027483785" duration="1294000" />
+      <workItem from="1569031917224" duration="3309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>filesOpening</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+</project>

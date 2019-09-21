@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.cburch.logisim.FileOut;
 
 public class TruthTable {
 	private static final Entry DEFAULT_ENTRY = Entry.DONT_CARE;
@@ -117,11 +118,12 @@ public class TruthTable {
 	private List<TruthTableListener> listeners = new ArrayList<TruthTableListener>();
 	private AnalyzerModel model;
 	private HashMap<String,Entry[]> outputColumns = new HashMap<String,Entry[]>();
+	private FileOut fileOut = new FileOut();
 	
 	public TruthTable(AnalyzerModel model) {
 		this.model = model;
-		model.getInputs().addVariableListListener(myListener);
-		model.getOutputs().addVariableListListener(myListener);
+		//model.getInputs().addVariableListListener(myListener);
+		//model.getOutputs().addVariableListListener(myListener);
 	}
 	
 	public void addTruthTableListener(TruthTableListener l) {
@@ -258,7 +260,12 @@ public class TruthTable {
 		Entry[] oldValues = outputColumns.get(outputName);
 		if (oldValues == values) return;
 		else if (values == null) outputColumns.remove(outputName);
-		else outputColumns.put(outputName, values);
+		else {
+			outputColumns.put(outputName, values);
+//			try {
+//					fileOut.writeFileContent( "D:\\file\\TruthTable.txt",values.toString());
+//				} catch (Exception e) {}
+		}
 		fireCellsChanged(column);
 	}
 	

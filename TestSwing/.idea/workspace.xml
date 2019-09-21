@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TestSwing:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="69570d96-78b7-48cb-91af-c0e17a42de27" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,46 +30,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Newcaidan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="150" column="52" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#readFile#0;class#Newcaidan#0" />
-                <element signature="method#writeFile#0;class#Newcaidan#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/proj/ProjectActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2869">
-              <caret line="284" selection-start-line="284" selection-end-line="284" />
-              <folding>
-                <element signature="method#run#0;class#CreateFrame#0;class#ProjectActions#0" />
-                <element signature="method#doNew#1;class#ProjectActions#0" />
-                <element signature="method#displayException#0;class#ProjectActions#0" />
-                <element signature="method#createEmptyFile#0;class#ProjectActions#0" />
-                <element signature="method#completeProject#0;class#ProjectActions#0" />
-                <element signature="method#createNewFile#0;class#ProjectActions#0" />
-                <element signature="method#createFrame#0;class#ProjectActions#0" />
-                <element signature="method#doNew#2;class#ProjectActions#0" />
-                <element signature="method#doOpen#0;class#ProjectActions#0" />
-                <element signature="method#doOpen#1;class#ProjectActions#0" />
-                <element signature="method#doSaveAs#0;class#ProjectActions#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -73,141 +37,22 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>item1</find>
-      <find>fileChooser</find>
-      <find>doAnalyze</find>
-      <find>doAnaly</find>
-      <find>entry</find>
-      <find>Analyze</find>
-      <find>getPinLabels</find>
-      <find>model</find>
-      <find>setVariables</find>
-      <find>Value</find>
-      <find>proj</find>
-      <find>doOpen</find>
-      <find>loader</find>
-      <find>LogisimFile(</find>
-      <find>substitutions</find>
-      <find>Project(</find>
-      <find>loadSub</find>
-      <find>filesOpening</find>
-      <find>StringGetter</find>
-      <find>Entry</find>
-      <find>gateUndefinedIgnore</find>
-      <find>getBuiltin()</find>
-      <find>computeTable</find>
-      <find>fireEvent</find>
-      <find>extends Menu</find>
-      <find>.gif</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/javax/help/HelpSet.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/MenuFile.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/util/WindowMenuManager.java" />
-        <option value="$PROJECT_DIR$/src/com/connectina/swing/fontchooser/JFontChooser.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/proj/Projects.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/LogisimMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/util/WindowMenuItemManager.java" />
-        <option value="$PROJECT_DIR$/src/com/MenuEdit.java" />
-        <option value="$PROJECT_DIR$/src/com/MenuFile.java" />
-        <option value="$PROJECT_DIR$/src/com/LogisimMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/com/Project.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/MenuHelp.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/data/Attributes.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/util/MacCompatibility.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/start/MacOsAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/generic/CanvasPane.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/start/Startup.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/proj/Project.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/ProjectLibraryActions.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/file/LogisimFile.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/file/Options.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/file/LibraryManager.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/VariableList.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/circuit/Analyze.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/std/wiring/Pin.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/ProjectCircuitActions.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/file/Loader.java" />
-        <option value="$PROJECT_DIR$/src/Newcaidan.java" />
-        <option value="$PROJECT_DIR$/src/com/cburch/logisim/proj/ProjectActions.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-21" />
-    <option name="y" value="33" />
-    <option name="width" value="1947" />
-    <option name="height" value="957" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="TestSwing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestSwing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestSwing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestSwing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestSwing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestSwing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cburch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestSwing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestSwing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestSwing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestSwing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="logisim" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1R2qWKIg6NUQfeRawXlrEMChuK3" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/logisim-generic-2.7.1" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567486163413" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -215,6 +60,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kxg\IdeaProjects\TestSwing\src" />
+      <recent name="C:\Users\kxg\IdeaProjects\TestSwing\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,25 +104,32 @@
       <workItem from="1559113501269" duration="8985000" />
       <workItem from="1559227044775" duration="416000" />
       <workItem from="1559272375563" duration="210000" />
-      <workItem from="1559272800625" duration="57000" />
-      <workItem from="1559637668578" duration="1998000" />
-      <workItem from="1559704876752" duration="997000" />
-      <workItem from="1559713661187" duration="759000" />
-      <workItem from="1559790621829" duration="20000" />
-      <workItem from="1559790709206" duration="39000" />
-      <workItem from="1559807078060" duration="15034000" />
-      <workItem from="1560307632229" duration="84000" />
-      <workItem from="1561989005784" duration="158000" />
-      <workItem from="1562673924976" duration="1927000" />
-      <workItem from="1562903334108" duration="17000" />
-      <workItem from="1562903404971" duration="1473000" />
-      <workItem from="1562926312054" duration="3617000" />
-      <workItem from="1562930592170" duration="82000" />
+      <workItem from="1559273253062" duration="2869000" />
+      <workItem from="1559353448664" duration="3654000" />
+      <workItem from="1559369867218" duration="2339000" />
+      <workItem from="1559477187316" duration="4782000" />
+      <workItem from="1559550538366" duration="8343000" />
+      <workItem from="1559608996262" duration="391000" />
+      <workItem from="1559813838513" duration="377000" />
+      <workItem from="1559814265313" duration="293000" />
+      <workItem from="1559819750975" duration="7007000" />
+      <workItem from="1560168999798" duration="1718000" />
+      <workItem from="1561001007752" duration="427000" />
+      <workItem from="1562147376142" duration="2615000" />
+      <workItem from="1563177954814" duration="3675000" />
+      <workItem from="1563413344264" duration="8656000" />
+      <workItem from="1564102754646" duration="9745000" />
+      <workItem from="1564537695239" duration="1733000" />
+      <workItem from="1564621904460" duration="599000" />
+      <workItem from="1565149892777" duration="2777000" />
+      <workItem from="1567483289572" duration="1899000" />
+      <workItem from="1568469838472" duration="744000" />
+      <workItem from="1568875573887" duration="1836000" />
+      <workItem from="1569027483785" duration="1294000" />
+      <workItem from="1569031917224" duration="6451000" />
+      <workItem from="1569051417783" duration="126000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,63 +140,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23653395" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15966387" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39267015" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32984293" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32984293" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32983023" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -351,10 +147,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/file/LogisimFile.java</url>
-          <line>390</line>
-          <properties />
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -371,582 +181,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/util/LocaleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-          <folding>
-            <element signature="class#LocaleGetter#0;class#LocaleManager#0" />
-            <element signature="method#getLocale#0;class#LocaleManager#0" />
-            <element signature="method#setLocale#0;class#LocaleManager#0" />
-            <element signature="method#setReplaceAccents#0;class#LocaleManager#0" />
-            <element signature="method#fetchReplaceAccents#0;class#LocaleManager#0" />
-            <element signature="method#fireLocaleChanged#0;class#LocaleManager#0" />
-            <element signature="method#loadLocale#0;class#LocaleManager#0" />
-            <element signature="method#getLocaleOptions#0;class#LocaleManager#0" />
-            <element signature="method#createLocaleSelector#0;class#LocaleManager#0" />
-            <element signature="method#replaceAccents#0;class#LocaleManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/gui/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/gui/TableTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="262" selection-start-line="262" selection-end-line="262" />
-          <folding>
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/TruthTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="e#5146#5147#0" expanded="true" />
-            <element signature="e#5184#5185#0" expanded="true" />
-            <element signature="e#5223#5224#0" expanded="true" />
-            <element signature="e#5262#5263#0" expanded="true" />
-            <element signature="e#5308#5309#0" expanded="true" />
-            <element signature="e#5351#5352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/data/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#2529#2530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/LogisimMenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/AnalyzerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/file/LibraryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="139" column="67" lean-forward="true" selection-start-line="139" selection-start-column="67" selection-end-line="139" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/Expressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="255" selection-start-line="255" selection-end-line="255" />
-          <folding>
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#2997#2998#0" expanded="true" />
-            <element signature="e#4971#4972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/instance/InstanceComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
-          <folding>
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5898#5899#0" expanded="true" />
-            <element signature="e#5915#5916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/draw/toolbar/Toolbar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#2362#2363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/draw/toolbar/ToolbarButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/comp/ComponentDrawContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/instance/InstancePainter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/main/LayoutToolbarModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/model/VariableList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="109" column="74" lean-forward="true" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="74" />
-          <folding>
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/circuit/Analyze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="268" column="58" selection-start-line="268" selection-start-column="58" selection-end-line="268" selection-end-column="58" />
-          <folding>
-            <element signature="e#7268#7269#0" expanded="true" />
-            <element signature="e#7299#7300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/draw/canvas/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/draw/model/Drawing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="40" column="7" selection-start-line="40" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JFileChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="281" column="17" selection-start-line="281" selection-start-column="17" selection-end-line="281" selection-end-column="17" />
-          <folding>
-            <element signature="e#15769#15770#0" expanded="true" />
-            <element signature="e#15804#15805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/bric/ColorPicker.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/logisim/icons/pinInput.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/connectina/image/FontChooser16Mono.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/connectina/image/FontChooser16Color.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/MenuEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/util/StringGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/data/Attribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/std/wiring/Pin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/ImageIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="215" column="11" selection-start-line="215" selection-start-column="11" selection-end-line="215" selection-end-column="11" />
-          <folding>
-            <element signature="e#6701#6702#0" expanded="true" />
-            <element signature="e#6758#6759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/util/Icons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/analyze/gui/Analyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding>
-            <element signature="e#8920#8921#0" expanded="true" />
-            <element signature="e#8939#8940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/instance/Instance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/menu/ProjectCircuitActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#doAddCircuit#0;class#ProjectCircuitActions#0" />
-            <element signature="method#promptForCircuitName#0;class#ProjectCircuitActions#0" />
-            <element signature="method#doMoveCircuit#0;class#ProjectCircuitActions#0" />
-            <element signature="method#doSetAsMainCircuit#0;class#ProjectCircuitActions#0" />
-            <element signature="method#doRemoveCircuit#0;class#ProjectCircuitActions#0" />
-            <element signature="method#doAnalyze#0;class#ProjectCircuitActions#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/file/LibraryLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/std/Builtin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/prefs/RecentProjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/prefs/AppPreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-          <folding>
-            <element signature="e#13751#13752#0" expanded="true" />
-            <element signature="e#13791#13792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JOptionPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="633" column="23" selection-start-line="633" selection-start-column="23" selection-end-line="633" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/file/LogisimFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-          <folding>
-            <element signature="e#2861#2862#0" expanded="true" />
-            <element signature="e#2881#2882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/proj/Projects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="150" column="9" lean-forward="true" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/file/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#LogisimFileFilter#0;class#Loader#0" />
-            <element signature="class#JarFileFilter#0;class#Loader#0" />
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="method#loadLogisimLibrary#0;class#Loader#0" />
-            <element signature="method#loadJarLibrary#0;class#Loader#0" />
-            <element signature="method#save#0;class#Loader#0" />
-            <element signature="method#determineBackupName#0;class#Loader#0" />
-            <element signature="method#recoverBackup#0;class#Loader#0" />
-            <element signature="method#loadJarFile#0;class#Loader#0" />
-            <element signature="method#getFileFor#0;class#Loader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/proj/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-          <folding>
-            <element signature="e#3689#3690#0" expanded="true" />
-            <element signature="e#3707#3708#0" expanded="true" />
-            <element signature="e#3920#3921#0" expanded="true" />
-            <element signature="e#3939#3940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1621" column="16" selection-start-line="1621" selection-start-column="16" selection-end-line="1621" selection-end-column="16" />
-          <folding>
-            <element signature="e#55982#55983#0" expanded="true" />
-            <element signature="e#56005#56006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1285" column="16" selection-start-line="1285" selection-start-column="16" selection-end-line="1285" selection-end-column="16" />
-          <folding>
-            <element signature="e#35456#35457#0" expanded="true" />
-            <element signature="e#35491#35492#0" expanded="true" />
-            <element signature="e#45982#45983#0" expanded="true" />
-            <element signature="e#46020#46021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/gui/main/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="371" column="18" selection-start-line="371" selection-start-column="18" selection-end-line="371" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12899#12900#0" expanded="true" />
-            <element signature="e#12925#12926#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Newcaidan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="150" column="52" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#readFile#0;class#Newcaidan#0" />
-            <element signature="method#writeFile#0;class#Newcaidan#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cburch/logisim/proj/ProjectActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2869">
-          <caret line="284" selection-start-line="284" selection-end-line="284" />
-          <folding>
-            <element signature="method#run#0;class#CreateFrame#0;class#ProjectActions#0" />
-            <element signature="method#doNew#1;class#ProjectActions#0" />
-            <element signature="method#displayException#0;class#ProjectActions#0" />
-            <element signature="method#createEmptyFile#0;class#ProjectActions#0" />
-            <element signature="method#completeProject#0;class#ProjectActions#0" />
-            <element signature="method#createNewFile#0;class#ProjectActions#0" />
-            <element signature="method#createFrame#0;class#ProjectActions#0" />
-            <element signature="method#doNew#2;class#ProjectActions#0" />
-            <element signature="method#doOpen#0;class#ProjectActions#0" />
-            <element signature="method#doOpen#1;class#ProjectActions#0" />
-            <element signature="method#doSaveAs#0;class#ProjectActions#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>TestSwing</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

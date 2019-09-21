@@ -244,6 +244,7 @@ public class Project {
 	// at startup by default, because we want to close it
 	// immediately as another project is opened, if there
 	// haven't been any changes to it.
+	//我们跟踪这个项目是否是默认情况下在启动时打开的空项目，因为如果没有任何更改，我们希望在打开另一个项目时立即关闭它。
 	public boolean isStartupScreen() {
 		return startupScreen;
 	}

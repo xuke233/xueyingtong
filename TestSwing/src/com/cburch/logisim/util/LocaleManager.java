@@ -141,7 +141,7 @@ public class LocaleManager {
 	private ResourceBundle locale = null;
 	private ResourceBundle dflt_locale = null;
 
-	//构造方法
+	//鏋勯�犳柟娉�
 	public LocaleManager(String dir_name, String file_start) {
 		this.dir_name = dir_name;
 		this.file_start = file_start;
@@ -178,7 +178,7 @@ public class LocaleManager {
 	public String get(String key) {
 		String ret;
 		try {
-			//java.util.ResourceBundle.getString(String key)方法
+			//java.util.ResourceBundle.getString(String key)鏂规硶
 			// 获取一个字符串给定键从此资源包或它的某个父类。
 			ret = locale.getString(key);
 		} catch (MissingResourceException e) {

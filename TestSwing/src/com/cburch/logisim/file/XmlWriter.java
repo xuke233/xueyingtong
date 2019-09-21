@@ -43,7 +43,7 @@ class XmlWriter {
 			throws ParserConfigurationException,
 				TransformerConfigurationException, TransformerException {
 		DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+		DocumentBuilder docBuilder = docFactory.newDocumentBuilder();     //生成文档实例
 
 		Document doc = docBuilder.newDocument();
 		XmlWriter context = new XmlWriter(file, doc, loader);
@@ -78,16 +78,19 @@ class XmlWriter {
 	}
 
 	Element fromLogisimFile() {
-		Element ret = doc.createElement("project");
-		doc.appendChild(ret);
+		Element ret = doc.createElement("project");           //创建指定类型的元素<project>
+		                                                                 //<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+		doc.appendChild(ret);                                            //将节点<code>ret<code>添加到此节点的子节点列表的末尾。return 添加的节点
+													                      //实际作用：将ret输入到文件中
 		ret.appendChild(doc.createTextNode("\nThis file is intended to be "
 				+ "loaded by Logisim (http://www.cburch.com/logisim/).\n"));
 		ret.setAttribute("version", "1.0");
-		ret.setAttribute("source", Main.VERSION_NAME);
+		ret.setAttribute("source", Main.VERSION_NAME);            //<project source="2.7.1" version="1.0">
 
-		for (Library lib : file.getLibraries()) {
-			Element elt = fromLibrary(lib);
-			if (elt != null) ret.appendChild(elt);
+		for (Library lib : file.getLibraries()) {                        //遍历lib
+			Element elt = fromLibrary(lib);                              //
+			if (elt != null) ret.appendChild(elt);                       //将内容加到ret中
 		}
 
 		if (file.getMainCircuit() != null) {
@@ -107,8 +110,8 @@ class XmlWriter {
 	}
 
 	Element fromLibrary(Library lib) {
-		Element ret = doc.createElement("lib");
-		if (libs.containsKey(lib)) return null;
+		Element ret = doc.createElement("lib");              //创建元素<lib>
+		if (libs.containsKey(lib)) return null;                        //containsKey如果此映射包含指定键的映射，则返回<tt>true
 		String name = "" + libs.size();
 		String desc = loader.getDescriptor(lib);
 		if (desc == null) {
@@ -116,19 +119,19 @@ class XmlWriter {
 				+ lib.getName());
 			return null;
 		}
-		libs.put(lib, name);
-		ret.setAttribute("name", name);
+		libs.put(lib, name);                                              //将哈希表中 lib与name相关联，如果映射之前包含键的映射，则值被替换
+		ret.setAttribute("name", name);                           //赋值
 		ret.setAttribute("desc", desc);
 		for (Tool t : lib.getTools()) {
 			AttributeSet attrs = t.getAttributeSet();
 			if (attrs != null) {
-				Element toAdd = doc.createElement("tool");
-				toAdd.setAttribute("name", t.getName());
-				addAttributeSetContent(toAdd, attrs, t);
-				if (toAdd.getChildNodes().getLength() > 0) {
+				Element toAdd = doc.createElement("tool");     //创建元素<tool>
+				toAdd.setAttribute("name", t.getName());          //tool.name
+				addAttributeSetContent(toAdd, attrs, t);                 //获取tool元素
+				if (toAdd.getChildNodes().getLength() > 0) {              //列表中的节点数》0
 					ret.appendChild(toAdd);
 				}
-			}
+		}
 		}
 		return ret;
 	}
@@ -242,7 +245,7 @@ class XmlWriter {
 	}
 
 	Element fromWire(Wire w) {
-		Element ret = doc.createElement("wire");
+		Element ret = doc.createElement("wire");                    //创建元素wire
 		ret.setAttribute("from", w.getEnd0().toString());
 		ret.setAttribute("to", w.getEnd1().toString());
 		return ret;

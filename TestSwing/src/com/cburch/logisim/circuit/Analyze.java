@@ -3,6 +3,10 @@
 
 package com.cburch.logisim.circuit;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -13,14 +17,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.util.UUID;
+
 
 import com.cburch.logisim.analyze.model.AnalyzerModel;
 import com.cburch.logisim.analyze.model.Entry;
@@ -36,6 +33,7 @@ import com.cburch.logisim.instance.InstanceState;
 import com.cburch.logisim.instance.StdAttr;
 import com.cburch.logisim.proj.Project;
 import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.FileOut;
 
 public class Analyze {
 	private static final int MAX_ITERATIONS = 100;
@@ -267,7 +265,7 @@ public class Analyze {
 	// computes outputs of affected components计算受影响组件的输出
 	private static HashSet<Component> getDirtyComponents(Circuit circuit,
 			Set<Location> pointsToProcess) throws AnalyzeException {
-		HashSet<Component> dirtyComponents = new HashSet<>();
+		HashSet<Component> dirtyComponents = new HashSet<Component>();
 		for (Location point : pointsToProcess) {
 			for (Component comp : circuit.getNonWires(point)) {
 				dirtyComponents.add(comp);
@@ -309,11 +307,18 @@ public class Analyze {
 		return null;
 	}
 
+
+
+	private String filePath;
+
 	//
 	// ComputeTable   计算真值表
 	//
 	/** Returns a truth table corresponding to the circuit. */
 	//返回与电路对应的真值表。
+
+
+
 	public static void computeTable(AnalyzerModel model, Project proj,
 			Circuit circuit, Map<Instance, String> pinLabels) {   //接口 Map<K,V>  http://www.cjsdn.net/Doc/JDK50/java/util/Map.html
 		ArrayList<Instance> inputPins = new ArrayList<>();
@@ -371,135 +376,75 @@ public class Analyze {
 			}
 		}
 		model.setVariables(inputNames, outputNames);
+		int y=1;
 		for (int i = 0; i < columns.length; i++) {
 			model.getTruthTable().setOutputColumn(i, columns[i]);
+			y++;
 		}
 
 		//UUID uuid = UUID.randomUUID();
 		//createFile(uuid+"TruthTable", "");
-		for (Entry[] column : columns) {
-			for (int i = 0; i < columns.length; i++) {
-				/*
-				try {
-					writeFileContent(uuid + "TruthTable", column[i].toString());
-				} catch (Exception e) {
-					e.printStackTrace();
+//		FileOut fileOut = new FileOut();
+//		for (int j = 0; j < columns.length; j++) {
+//			for (int i = 0; i < columns.length; i++) {
+//				try {
+//				fileOut.writeFileContent("D:\\file\\TruthTable.txt" , columns[j][i].toString());
+//				} catch (Exception e) {
+//				}
+//			}
+        //读取正确真值表数值，并传入Answer数组
+		File file = new File("C:\\Users\\kxg\\Desktop\\logisimfile\\TureTable.txt");
+		if (!file.exists()) {
+			System.out.println("文件不存在");
+		}
+		BufferedReader reader = null;
+		String[][] TrueAnwser = new String[20][20];
+		try {
+
+			reader = new BufferedReader(new FileReader(file));
+			String tempString = "";
+			int x = -1;
+			while ((tempString = reader.readLine()) != null) {
+				new String(tempString.getBytes("GBK"), "UTF-8");
+				for (int i = 0; i < columns.length; i++) {
+					if(i==0) x++;
+					TrueAnwser[x][i]=tempString;
 				}
-				*/
-				System.out.println("columns[" + i + "] = " + column[i].toString());
 			}
-		}
-
-	}
-
-
-	private static String path = "C:\\Users\\kxg\\MyFiles\\XinMiao\\";
-
-	//文件路径+名称
-	private static String filenameTemp;
-	/**
-	 * 创建文件
-	 * @param fileName  文件名称
-	 * @param filecontent   文件内容
-	 * @return  是否创建成功，成功则返回true
-	 */
-	private static boolean createFile(String fileName, String filecontent){
-		boolean bool = false;
-		filenameTemp = path+fileName+".txt";//文件路径+名称+文件类型
-		File file = new File(filenameTemp);
-		try {
-			//如果文件不存在，则创建新的文件
-			if(!file.exists()){
-				file.createNewFile();
-				bool = true;
-				System.out.println("success create file,the file is "+filenameTemp);
-				//创建文件成功后，写入内容到文件里
-				writeFileContent(filenameTemp, filecontent);
-			}
-		} catch (Exception e) {
+			reader.close();
+		} catch (IOException e) {
 			e.printStackTrace();
+			if (reader != null)
+				try {
+					reader.close();
+				} catch (IOException localIOException1) {}
+		} finally {
+			if (reader != null)
+				try {
+					reader.close();
+				} catch (IOException localIOException2) {
+				}
 		}
 
-		return bool;
-	}
+		//对比数据并打分
+		int x=-1;
+		int Score=100;
+		String Anwser =	"";
+		for (Entry[] column : columns) {
 
-	/**
-	 * 向文件中写入内容
-	 * @param filepath 文件路径与名称
-	 * @param newstr  写入的内容
-	 * @throws IOException
-	 */
-	private static void writeFileContent(String filepath, String newstr) throws IOException{
-		//boolean bool = false;
-		String filein = newstr+"\r\n";//新写入的行，换行
-		String temp;
-
-		FileInputStream fis = null;
-		InputStreamReader isr = null;
-		BufferedReader br = null;
-		FileOutputStream fos  = null;
-		PrintWriter pw = null;
-		try {
-			File file = new File(filepath);//文件路径(包括文件名称)
-			//将文件读入输入流
-			fis = new FileInputStream(file);
-			isr = new InputStreamReader(fis);
-			br = new BufferedReader(isr);
-			StringBuffer buffer = new StringBuffer();
-
-			//文件原有内容
-			for(int i=0;(temp =br.readLine())!=null;i++){
-				buffer.append(temp);
-				// 行与行之间的分隔符 相当于“\n”
-				buffer = buffer.append(System.getProperty("line.separator"));
-			}
-			buffer.append(filein);
-
-			fos = new FileOutputStream(file);
-			pw = new PrintWriter(fos);
-			pw.write(buffer.toString().toCharArray());
-			pw.flush();
-			//bool = true;
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}finally {
-			//不要忘记关闭
-			if (pw != null) {
-				pw.close();
-			}
-			if (fos != null) {
-				fos.close();
-			}
-			if (br != null) {
-				br.close();
-			}
-			if (isr != null) {
-				isr.close();
-			}
-			if (fis != null) {
-				fis.close();
+			for (int i = 0; i < columns.length; i++) {
+				if(i==0) x++;
+				//System.out.println("columns[" + x + i + "] = " + column[i].toString());
+				Anwser = column[i].toString();
+				if(TrueAnwser[x][i].equals(Anwser))break;
+				else {
+					Score-=5;
+					System.out.println("columns[" + x + i + "] = " + column[i].toString()+"is wrong.");
+				}
 			}
 		}
-	}
-
-	/**
-	 * 删除文件
-	 * @param fileName 文件名称
-	 * @return
-	 */
-	public static boolean delFile(String fileName){
-		Boolean bool = false;
-		filenameTemp = path+fileName+".txt";
-		File file  = new File(filenameTemp);
-		try {
-			if(file.exists()){
-				file.delete();
-				bool = true;
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return bool;
+		if(Score<0){
+			System.out.println("The Score is 0");
+		}else System.out.println("The Score is "+ Score);
 	}
 }

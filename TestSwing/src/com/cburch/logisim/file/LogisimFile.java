@@ -257,7 +257,7 @@ public class LogisimFile extends Library implements LibraryEventSource {
 		libraries.remove(lib);
 		fireEvent(LibraryEvent.REMOVE_LIBRARY, lib);
 	}
-	
+
 	public String getUnloadLibraryMessage(Library lib) {
 		HashSet<ComponentFactory> factories = new HashSet<ComponentFactory>();
 		for (Tool tool : lib.getTools()) {

@@ -232,9 +232,9 @@ public class OutputExpressions {
 	
 	public OutputExpressions(AnalyzerModel model) {
 		this.model = model;
-		model.getInputs().addVariableListListener(myListener);
-		model.getOutputs().addVariableListListener(myListener);
-		model.getTruthTable().addTruthTableListener(myListener);
+		//model.getInputs().addVariableListListener(myListener);
+		//model.getOutputs().addVariableListListener(myListener);
+		//model.getTruthTable().addTruthTableListener(myListener);
 	}
 	
 	//
