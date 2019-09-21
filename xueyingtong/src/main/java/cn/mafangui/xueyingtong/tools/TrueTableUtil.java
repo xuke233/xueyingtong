@@ -18,8 +18,8 @@ public class TrueTableUtil {
 		try{
 			score = ProjectCircuitActions.doAnalyzeT(proj, cur,path);
 		}catch (Exception e){
-			System.out.println(e.getMessage());
-			score = -1;
+			e.printStackTrace();
+			score = 0;
 		}
 		return score;
 	}

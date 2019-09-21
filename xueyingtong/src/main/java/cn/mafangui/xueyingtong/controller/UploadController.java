@@ -4,6 +4,10 @@ package cn.mafangui.xueyingtong.controller;
 import cn.mafangui.xueyingtong.entity.CircFile;
 import cn.mafangui.xueyingtong.service.FileService;
 import cn.mafangui.xueyingtong.tools.TrueTableUtil;
+import org.apache.commons.io.FileUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ResourceUtils;
@@ -13,11 +17,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.annotation.Resource;
+
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -28,7 +33,7 @@ import java.util.Date;
 @Component
 public class UploadController {
 
-    @Resource
+    @Autowired
     FileService fileService;
 
     @PostMapping("/upload/{id}")
@@ -66,19 +71,20 @@ public class UploadController {
         File csf = new File(upload.getAbsolutePath()+"/"+file.getOriginalFilename());
         int score = 0;
         CircFile f = new CircFile();
+        InputStream is;
         if (csf.exists()){
             try {
-                File table = ResourceUtils.getFile("classpath:static/truth/1.txt");
-                score = TrueTableUtil.getTrueTable(csf,table.getPath());
+                ClassPathResource cpr = new ClassPathResource("static/truth/1.txt");
+                is = cpr.getInputStream();
+                File tt = File.createTempFile("truth_table","txt");
+                FileUtils.copyInputStreamToFile(is,tt);
+                score = TrueTableUtil.getTrueTable(csf,tt.getCanonicalPath());
+                is.close();
             }catch (Error | Exception e){
-                System.out.println(e.getMessage());
+                e.printStackTrace();
                 redirectAttributes.addFlashAttribute("message", "上传失败");
                 return "redirect:/experiment/"+id;
             }
-        }
-        if (score<0){
-            redirectAttributes.addFlashAttribute("message", "上传失败");
-            return "redirect:/experiment/"+id;
         }
         f.setExpId(id);
         f.setFilename(file.getOriginalFilename());
