@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand text-primary" th:href="@{/}" >学硬通</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <a class="btn btn-success navbar-btn navbar-right" th:if="${email}" th:text="${email}"></a>
+            <a class="btn navbar-btn navbar-right" th:if="${email==null}" href="login">登录</a>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

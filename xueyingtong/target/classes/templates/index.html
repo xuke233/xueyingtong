@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <title>学硬通</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.0.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+<!--    <script src="js/npm.js"></script>-->
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+  </head>
+  <body>
+  <div th:insert="fragment/header.html"></div>
+  <div class="container container-fluid">
+        
+     <div class="row">
+       <div class="col-sm-12 col-sm-offset-2 col-md-10 col-md-offset-1 ">
+           <div class="bg-primary jumbotron ">
+             <h1>硬件实验在线评分平台</h1>
+             <p>可以将Logism设计好的设计图上传，系统将自动对上传的文件进行评估，稍后返回评估分数。</p>
+           </div>
+       </div>
+     </div>
+
+     <!-- 实验列表 -->
+     <div class="row">
+       <div class="col-md-4" style="margin-bottom: 20px" th:each="exp,expStat:${exp_list}">
+         <div class="bg-info" style="padding: 30px;border-radius: 10px;">
+           <small th:id="${exp.getId()}"></small>
+             <h2 th:text="${exp.getName()}">全加器实验</h2>
+             <p th:text="${exp.getIntroduction()}">用门电路设计一位全加器电路，通过设计全加器测试实际电路。掌握二进制全加器的逻辑关系与电路设计和实现的基本方法。</p>
+             <p>
+               <a class="btn btn-success"  th:href="@{experiment/{id}(id=${exp.getId()})}" role="button">立即实验</a>
+             </p>
+         </div>
+         </div>
+      </div>
+      <!-- 实验列表end -->
+
+
+    </div>
+  </body>
+</html>
